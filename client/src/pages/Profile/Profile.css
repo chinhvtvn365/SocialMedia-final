@@ -1,0 +1,98 @@
+.Profile .Profile-user-top {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cardColor)
+}
+.Profile .Profile-user-top .Profile-user-person{
+    width:900px;
+    height: 500px;
+    max-height: 500px;
+    position: relative;
+}
+.Profile .Profile-user-top .Profile-user-person>img {
+    width: 100%;
+    max-width: 900px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.Profile .Profile-user-top .Profile-user-info {
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    margin-left: 30px;
+    width: 90%;
+}
+
+.Profile .Profile-user-top .Profile-user-info>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Profile .Profile-user-top .Profile-user-name > h1{
+    padding: 15px;
+    margin-bottom: 0;
+}
+.Profile .Profile-user-top .Profile-user-name .Profile-user-postfl {
+    display: flex;
+    padding-left: 15px;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.Profile .Profile-user-top .Profile-user-name .Profile-user-fl{
+    cursor: pointer;
+}
+.Profile .Profile-user-top .Profile-user-name .Profile-user-fl > span:nth-of-type(1){
+    font-weight: bold;
+}
+.Profile .Profile-user-top .Profile-user-name>span{
+    padding-left: 15px;
+    font-weight: 600;
+}
+.Profile .Profile-user-bottom {
+    display: flex;
+    justify-content: center;
+}
+.Profile .Profile-user-bottom .Profile-Timeline{
+    width: 900px;
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: row;
+}
+.Profile .Profile-user-bottom .Profile-Timeline .Profile-info{
+    width: 40%;
+}
+.Profile .Profile-user-bottom .Profile-Timeline .Profile-post{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  overflow: auto;
+}
+.Profile-user-bottom .Profile-Timeline .Profile-post .PostCreate .PostCreate-share {
+    max-width: 86%;
+}
+.Profile-user-bottom .Profile-Timeline .Profile-post .PostCreate .PostCreate-share .PostCreate-option .PostCreate-button {
+    padding: 5px 16px;
+}
+@media only screen and (max-width: 767px){
+    .Profile .Profile-user-bottom .Profile-Timeline{
+        padding: 0 30px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Profile .Profile-user-bottom .Profile-Timeline .Profile-info{
+        width: unset;
+    }
+    .Profile .Profile-user-bottom .Profile-Timeline .Profile-post{
+        width: unset;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}

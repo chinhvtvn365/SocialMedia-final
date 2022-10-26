@@ -1,0 +1,97 @@
+.DragDropFile {
+  background-color: var(--cardColor);
+  border-width: 2px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: var(--hrColor);
+  color: #fff;
+  height: calc(70vh - 24px);
+  padding: 10px;
+}
+
+.DragDropFile-inner {
+  height: 100%;
+}
+
+.DragDropFile .form-file-upload {
+  /* height: 16rem;
+  width: 28rem;
+  max-width: 100%; */
+  text-align: center;
+  position: relative;
+  background-color: var(--inputFilePost);
+  border-radius: 12px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.DragDropFile .form-file-upload:hover{
+  background-color: #47494A;
+}
+.DragDropFile .drag-active{
+  background-color: #39393b;
+}
+
+
+.DragDropFile-upload-img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.DragDropFile-upload-imgwrapper {
+  border-radius: 50%;
+  background-color: #5A5C5C;
+  font-size: 0;
+}
+
+.DragDropFile-upload-imgwrapper>img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.DragDropFile #input-file-upload {
+  display: none;
+}
+
+#label-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DragDropFile-lable-span {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.DragDropFile-lable-span span:nth-of-type(1) {
+  font-weight: 600;
+  padding: 5px;
+}
+
+.DragDropFile-lable-span span:nth-of-type(2) {
+  font-size: 12px;
+  padding: 5px;
+}
+
+
+#drag-file-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+@media only screen and (max-width: 767px){
+  .DragDropFile-inner {
+    height: 55%;
+}
+}

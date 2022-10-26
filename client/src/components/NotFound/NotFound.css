@@ -1,0 +1,46 @@
+
+.NotFound {
+    background-color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.NotFound > h1 {
+    font-weight: bold;
+    font-size: 3.75em;
+    color: var(--strawberryColor3);
+    text-align: center;
+}
+.NotFound .Notfound-info{
+    display: flex;
+    align-items: center;
+}
+.NotFound .Notfound-info .Notfound-img{
+    flex: 4;
+}
+.NotFound .Notfound-info .Notfound-text{
+    flex: 6;
+}
+.NotFound .Notfound-info .Notfound-img > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.NotFound .Notfound-info .Notfound-text h1{
+    font-size: 9rem;
+    font-weight: bold;
+    color: var(--strawberryColor3);
+    margin: 50px;
+}
+.NotFound .Notfound-info .Notfound-text h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.NotFound .Notfound-bt{
+    width: 180px;
+    padding: 12px 15px;
+    gap: 1rem;
+}

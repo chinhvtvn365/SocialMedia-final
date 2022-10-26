@@ -1,0 +1,175 @@
+.Auth {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--colorMain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Auth .Auth-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.Auth .Auth-container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Auth .Auth-container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: var(--colorMain);
+  transition: 0.5s;
+}
+
+.Auth .Auth-container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Auth .Auth-container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  transition: 0.5s;
+}
+
+.Auth .Auth-container .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.Auth .Auth-container .user .formBx form input {
+  position: relative;
+  width: 94.5%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 0.5rem;
+}
+
+.Auth .Auth-container .user .formBx form .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.Auth .Auth-container .user .formBx form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #677eff;
+}
+
+.Auth .Auth-container .signupBx {
+  pointer-events: none;
+}
+
+.Auth .Auth-container.active .signupBx {
+  pointer-events: initial;
+}
+
+.Auth .Auth-container .signupBx .formBx {
+  left: 100%;
+}
+
+.Auth .Auth-container.active .signupBx .formBx {
+  left: 0;
+}
+
+.Auth .Auth-container .signupBx .imgBx {
+  left: -100%;
+}
+
+.Auth .Auth-container.active .signupBx .imgBx {
+  left: 0%;
+}
+
+.Auth .Auth-container .signinBx .formBx {
+  left: 0%;
+}
+
+.Auth .Auth-container.active .signinBx .formBx {
+  left: 100%;
+}
+
+.Auth .Auth-container .signinBx .imgBx {
+  left: 0%;
+}
+
+.Auth .Auth-container.active .signinBx .imgBx {
+  left: -100%;
+}
+
+.Auth .Auth-container .user .formBx .Auth-button {
+  padding: 8px 20px;
+  width: 30%;
+  margin-top: 1rem;
+}
+
+.Auth .Auth-container .user .formBx p a {
+  cursor: pointer;
+}
+
+.Auth .Auth-container .user .formBx form .Auth-form-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.Auth .Auth-container .user .formBx form .Auth-form-input>input {
+  width: 50%;
+}
+.Auth .Auth-container .user .formBx .Loading-error{
+  margin-top: 20px;
+  height: 3rem;
+}
+@media only screen and (max-width: 767px){
+  .Auth .Auth-container {
+    max-width: 400px;
+  }
+
+  .Auth .Auth-container .imgBx {
+    display: none;
+  }
+
+  .Auth .Auth-container .user .formBx {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.FollowerModal{
+    background-color: var(--cardColor);
+    color: var(--black);
+    border-radius: 10px;
+}
+.FollowerTitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.FollowerModal hr{
+    margin: 0;
+    border: 1px solid var(--hrColor);
+    align-self: center;
+    width: 99%;
+}
+.FollowerModal .FollowerUser{
+    max-height: 50vh;
+    overflow: auto;
+    font-size: 14px;
+    margin-top: 1rem;
+}

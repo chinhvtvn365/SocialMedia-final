@@ -1,0 +1,62 @@
+
+.Person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Person:hover{
+    background-color: var(--hoverColor);
+}
+.Person .Person-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Person .Person-info a{
+    color: inherit; 
+}
+.Person .Person-info a:hover{
+    text-decoration: underline;
+}
+.Person .Person-info .Person-img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+}
+.Person .Person-info .Person-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Person .Person-info .Person-name > span:nth-of-type(1) {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.Person .Person-button{
+    height: 30px;
+    padding: 5px 20px;
+}
+.Person .warning-button{
+    background-color: var(--strawberryColor3);
+    border: 2px solid var(--strawberryColor3);
+}
+.Person .warning-button:hover{
+    color: var(--strawberryColor);
+    border: 2px solid var(--strawberryColor);
+    background: transparent;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+ .Person{
+    padding: 10px 0;
+ }
+ .Person .Person-button{
+    padding: 5px 10px;
+ }
+}

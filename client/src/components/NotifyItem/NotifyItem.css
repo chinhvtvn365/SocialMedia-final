@@ -1,0 +1,71 @@
+.Notify {
+  display: flex;
+  flex-direction: row;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Notify:hover {
+  background-color: var(--notiHover);
+}
+
+.Notify-avatar-wrapper {
+  margin: 8px 12px 8px 0;
+}
+
+.Notify-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Notify-right {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Notify-desc {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+}
+
+.Notify-info-wrapper {
+  line-height: 20px;
+  max-width: 100%;
+  max-height: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.Notify-info {
+  align-items: center;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Notify-text {
+  display: inline;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Notify-time {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--timeago);
+}
+
+.Notify-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}

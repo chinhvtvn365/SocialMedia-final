@@ -1,0 +1,110 @@
+.light-theme{
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+  --black: #2c2c2c;
+  --colorMain: #ff7f7f;
+  --strawberryColor: #e52b50;
+  --strawberryColor3: #ff6f5e;
+  --cardColor: #FFFFFF;
+  --bgColor: #F0F2F5;
+  --inputColor: #F0F2F5;
+  --online: #31A14C;
+  --bgColorPost: #000000;
+  --timeago: #0589dd;
+  --btColor: #00416a;
+  --scrollColor: #BCC0C4;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #ced0d4;
+  --headerColor: #00416a;
+  --headerColor2: #5d8aa8;
+  --blurColor: #65676b;
+  --bgCmtColor: #F0F2F5;
+  --hoverColor: #d8d9dc;
+  --hoverheaderColor: #bfc7cc;
+  --bgMessColor: #e4e6eb;
+  --inputFilePost: #323436;
+  --noti: #E41E3F;
+  --notiHover: #F2F2F2;
+  --isRead: #898A8D;
+}
+.dark-theme{
+  --bgColor: #18191A;
+  --black: #E4E6EB;
+  --cardColor: #242526;
+  --bgCmtColor: #3A3B3C;
+  --inputColor: #3A3B3C;
+  --hoverColor: #3A3B3C;
+  --headerColor: #d974df;
+  --headerColor2: #9c3e64;
+  --hoverheaderColor: #bfc7cc;
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+  --online: #31A14C;
+  --btColor: #00416a;
+  --scrollColor: #656768;
+  --strawberryColor: #9c3e64;
+  --strawberryColor3: #e52b50;
+  --hrColor: #3A3B3C;
+  --blurColor: #B0B3B8;
+  --bgColorPost: #000000;
+  --bgMessColor: #3E4042;
+  --colorMain: #ff7f7f;
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --inputFilePost: #323436;
+  --noti: #E41E3F;
+  --notiHover: #3a3b3c;
+  --timeago: #0589dd;
+  --isRead: #9B9EA3;
+}
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background: var(--bgColor);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 2px solid var(--btColor);
+  border-radius: 0.5rem;
+  background-color: var(--btColor);
+  transition: all 100ms ease-out;
+  font-weight: 600;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--btColor);
+  background-color: #c8e0ef;
+  border: 2px solid var(--btColor);
+  font-weight: 600;
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  --webkit-appearance: none;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--scrollColor);
+  border-radius: 20px;
+}
+

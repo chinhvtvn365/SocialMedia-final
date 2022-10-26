@@ -1,0 +1,38 @@
+.Search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 0 20px;
+    background-color: var(--inputColor);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 6px 0 rgb(136 148 171 / 20%), 0 24px 20px -24px rgb(71 82 107 / 10%);
+    overflow: hidden;
+    color: gray;
+  }
+
+.Search input {
+    border: none;
+    flex: 1;
+    outline: none;
+    height: 100%;
+    padding: 0 15px;
+    background-color: var(--inputColor);
+    font-size: 14px;
+    color: var(--black);
+  }
+  
+  .Search>i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .Search>svg {
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 767px){
+    .Search input {
+      width: 100%;
+    }
+  }

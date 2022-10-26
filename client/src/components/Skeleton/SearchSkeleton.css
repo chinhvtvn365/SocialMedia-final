@@ -1,0 +1,13 @@
+.SearchSkeleton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.SearchSkeleton .SearchSkeleton-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

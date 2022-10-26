@@ -1,0 +1,22 @@
+import React from 'react'
+
+import "./Home.css"
+import Header from '../../components/Header/Header';
+import ProfileSide from '../../components/ProfileSide/ProfileSide';
+import PostSide from '../../components/PostSide/PostSide';
+import RightSide from '../../components/RightSide/RightSide';
+
+const Home = () => {
+  return (
+    <>
+    <Header />
+    <div className="home">
+      <ProfileSide />
+      <PostSide />
+      <RightSide />
+    </div>
+    </>
+  )
+}
+
+export default Home

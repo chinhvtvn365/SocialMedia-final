@@ -1,0 +1,66 @@
+.Box{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -3px;
+}
+.Box:hover{
+    background-color: var(--hoverColor);
+}
+.Box hr{
+    position: absolute;
+    margin: 0;
+    width: 80%;
+    border: 1px solid var(--hrColor);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 0px;
+}
+.Box .Box-info{
+    display: flex;
+    padding: 15px 25px;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.Box .Box-info .Box-info-img{
+    position: relative;
+}
+.Box .Box-info .Box-info-img img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.Box .Box-info .Box-info-img-online{
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--online);
+    border-radius: 14px;
+    border: 2px solid var(--cardColor);
+}
+.Box .Box-info .Box-info-name{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 4px;
+    margin-left: 15px;
+}
+.Box .Box-info .Box-info-name span:nth-of-type(1){
+    font-weight: 600;
+    font-size: 18px;
+}
+.Box .Box-info .Box-info-name span:nth-of-type(2){
+    font-size: 15px;
+}
+@media only screen and (max-width: 767px){
+    .Box .Box-info{
+        justify-content: center;
+    }
+    .Box .Box-info .Box-info-name{
+        display: none;
+    }
+  }

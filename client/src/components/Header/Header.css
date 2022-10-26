@@ -1,0 +1,204 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 1%;
+  background-color: var(--headerColor);
+  position: relative;
+}
+
+header img {
+  display: block;
+}
+
+header .header-left {
+  flex-grow: 1;
+}
+
+header .header-left,
+header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .header-left > a img {
+  width: 100%;
+  height: 45px;
+  object-fit: cover;
+}
+header .header-left .header-left-cardItem{
+  position: absolute;
+  width: 90%;
+  max-width: 330px;
+  background-color: var(--cardColor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 95%;
+  left: 0;
+  z-index: 100;
+  border-radius: 10px;
+  max-height: 50vh;
+  overflow: auto;
+}
+header .header-left .header-left-cardItem .header-left-cardItem-inner{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+header .header-right .header-icon {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+header .header-right .header-icon .header-icon-img:hover {
+  background-color: var(--hoverheaderColor);
+  border-radius: 50%;
+}
+
+header .header-right .header-icon .header-icon-img,
+header .header-right .header-setting .header-setting-inner .header-menu .header-menu-innerImg {
+  background-color: var(--headerColor2);
+  border-radius: 50%;
+}
+
+header .header-right .header-icon .header-icon-img img {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+header .header-right .header-avatar {
+  cursor: pointer;
+}
+header .header-right .header-avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header .header-right .header-setting {
+  position: absolute;
+  width: 90%;
+  max-width: 360px;
+  background-color: var(--cardColor);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  max-height: 89vh;
+  overflow: auto;
+  top: 95%;
+  right: 1%;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+header .header-right .header-setting .header-setting-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+}
+
+header .header-right .header-setting .header-setting-inner a {
+  color: inherit;
+}
+
+header .header-right .header-setting .header-setting-inner .header-avatar {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+header .header-right .header-setting .header-setting-inner .header-avatar .header-info {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+header .header-right .header-setting .header-setting-inner .header-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header .header-right .header-setting .header-setting-inner .header-menu .header-menu-innerImg img {
+  width: 25px;
+  height: 25px;
+  padding: 0.5rem;
+}
+
+header .header-right .header-setting .header-setting-inner .header-menu span {
+  font-size: 16px;
+  font-weight: 600;
+}
+header .header-right .header-setting .header-setting-inner .header-avatar:hover , header .header-right .header-setting .header-setting-inner .header-menu:hover{
+  background-color: var(--hoverColor)
+}
+.header-noti{
+  position: relative;
+}
+.header-noti-no{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-noti-no>h3{
+  margin: 0;
+  text-align: center;
+}
+.header-noti-no>img{
+  width: 50%
+}
+.header-noti-length{
+  position: absolute;
+  background-color: var(--noti);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  top: -4px;
+  right: -4px;
+}
+.header-noti-length-text{
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-noti-modal{
+  display: flex;
+  flex-direction: column;
+}
+.header-noti-modal>h1{
+  margin: 20px 16px 12px;
+  padding: 7px 0;
+  font-size: 25px;
+}
+.header-noti-time{
+  padding: 20px 16px 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header-noti-item-wrapper{
+  padding: 8px;
+}
+
+.read-noti-color{
+  color: var(--isRead);
+}
+@media only screen and (max-width: 767px){
+.Search{
+    width: 50%;
+}
+.Search>i{
+  display: none;
+}
+}

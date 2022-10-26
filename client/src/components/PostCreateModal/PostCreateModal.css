@@ -1,0 +1,128 @@
+.mantine-16pg774 .mantine-178uc0u{
+    padding: 0;
+    background-color: var(--cardColor);
+}
+.mantine-16pg774 .mantine-178uc0u .mantine-121w2fi{
+    margin: 0;
+    padding: 8px 10px;
+}
+.mantine-16pg774 .mantine-178uc0u .mantine-121w2fi .mantine-cx9mud{
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.PostCreateModal{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    max-height: 70vh;
+    color: var(--black);
+}
+.PostCreateModal-left{
+    width: 55%;
+}
+.PostCreateModal-right{
+    width: 45%;
+    position: relative;
+}
+.PostCreateModal-left-img{
+    position: relative;
+}
+.PostCreateModal-left-img img{
+    width: 100%;
+    height: 70vh;
+    max-height: 70vh;
+    object-fit: cover;
+    display: block;
+    border-bottom-left-radius: 12px;
+}
+.PostCreateModal-right hr{
+    align-self: center;
+    border: 1px solid var(--hrColor);
+    margin: 0;
+    width: 99%;
+}
+.PostCreateModal-right-info{
+    display: flex;
+    padding: 20px;
+    gap: 1rem;
+    align-items: flex-end;
+}
+.PostCreateModal-right-info img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.PostCreateModal-right-info span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+}
+.PostCreateModal-right-textarea-wrapper{
+    padding: 0 20px;
+}
+.PostCreateModal-right-textarea {
+    background: transparent;
+    border: none;
+    overflow: auto;
+    resize: none;
+    outline: none;
+    color: var(--black);
+    font-size: 16px;
+    width: 100%;
+    line-height: 24px;
+    min-height: 45vh;
+    max-height: 45vh;
+}
+.PostCreateModal-right-submit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    padding: 20px;
+}
+.PostCreateModal-right-button{
+    flex: 1;
+    padding: 10px 20px;
+}
+.PostCreateModal-left-delete{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--cardColor);
+    border-radius: 50%;
+    font-size: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.PostCreateModal-left-delete:hover{
+    background-color: #525355;
+}
+
+@media only screen and (max-width: 767px){
+    .PostCreateModal{
+        flex-direction: column;
+    }
+    .PostCreateModal-left{
+        height: 55%;
+        width: unset;
+    }
+    .PostCreateModal-right{
+        height: 45%;
+        width: unset;
+    }
+    .PostCreateModal-left-img{
+        height: 100%;
+    }
+    .PostCreateModal-left-img img{
+        height: 100%;
+        max-height: unset;
+        border-bottom-left-radius: 0;
+    }
+
+}

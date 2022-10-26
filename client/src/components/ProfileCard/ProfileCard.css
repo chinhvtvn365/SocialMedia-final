@@ -1,0 +1,97 @@
+.ProfileCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow-x: clip;
+    background-color: var(--cardColor);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ProfileCard .ProfileCard-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileCard .ProfileCard-img>img:nth-of-type(1) {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.ProfileCard .ProfileCard-img>img:nth-of-type(2) {
+    width: 6rem;
+    object-fit: cover;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3rem;
+    box-shadow: var(--profileShadow);
+}
+
+.ProfileCard .ProfileCard-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.ProfileCard .ProfileCard-name>span:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.ProfileCard .ProfileCard-follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.ProfileCard .ProfileCard-follow>hr {
+    width: 100%;
+    border: 1px solid var(--hrColor)
+}
+
+.ProfileCard .ProfileCard-follow>div {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ProfileCard .ProfileCard-follow .follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.ProfileCard .ProfileCard-follow .follow > span:nth-of-type(1){
+    font-size: 14px;
+    color: var(--black);
+}
+.ProfileCard .ProfileCard-follow .follow > span:nth-of-type(2){
+    font-weight: bold;
+}
+.ProfileCard .ProfileCard-follow .line{
+    height: 150%;
+    border-left: 2px solid var(--hrColor);
+}
+.ProfileCard > span{
+    font-weight: bold;
+    color: var(--strawberryColor);
+    align-self: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.ProfileCard-button{
+    color: inherit;
+}

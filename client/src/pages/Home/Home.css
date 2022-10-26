@@ -1,0 +1,20 @@
+.home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 23% 50% 27%;
+    gap: 1rem;
+    height: calc(100vh - 55px);
+}
+@media only screen and (max-width: 767px){
+    .home{
+        grid-template-columns: 100%;
+        padding: 0 30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .home{
+        grid-template-columns: 30% 70%;
+        gap: 0;
+        padding: 0 30px;
+    }
+}

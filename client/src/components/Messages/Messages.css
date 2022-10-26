@@ -1,0 +1,66 @@
+.Message-inner{
+  position: relative;
+  height: calc(100vh - 55px);
+}
+.Message{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  transform: translate(-50%, 0);
+  left: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.Message .Message-box{
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 30%;
+}
+.Message .Message-chat{
+  width: 70%;
+  position: relative;
+  background-color: var(--cardColor);
+}
+.Message .Message-box .Message-box-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  height: 54px;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--strawberryColor);
+}
+.Message .Message-box .Message-box-search input{
+ width: 50%;
+height: 42px;
+padding: 0 15px;
+border: none;
+background-color: var(--inputColor);
+border-radius: 25px;
+outline: none;
+color: var(--black);
+}
+.Message .Message-box .Message-box-search img{
+  width: 36px;
+  height: 36px;
+  }
+
+.Message .Message-box .Message-box-item{
+  margin-top: 3px;
+  background-color: var(--cardColor);
+}
+@media only screen and (max-width: 767px){
+  .Message .Message-chat{
+    width: 85%;
+  }
+  .Message .Message-box{
+    width: 15%;
+  }
+  .Message .Message-box .Message-box-search input{
+    display: none;
+  }
+}

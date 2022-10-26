@@ -1,0 +1,185 @@
+.Post{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.Post .Post-header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Post .Post-header .Post-header-wrapper{
+    display: flex;
+}
+.Post .Post-header .Post-header-wrapper img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Post .Post-header .Post-header-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: space-evenly;
+}
+.Post .Post-header .Post-header-info .Post-header-info-name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.Post .Post-header .Post-header-info .Post-header-info-time{
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--blurColor)
+}
+.Post .Post-header .Post-header-info .Post-header-info-name a{
+    color: inherit;
+}
+.Post .Post-header .Post-header-info .Post-header-info-name a:hover{
+    text-decoration: underline;
+}
+.Post .Post-header .Post-header-another {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+}
+.Post .Post-header .Post-header-another:hover{
+    background-color: var(--hoverColor);
+}
+.Post .Post-header .Post-header-another img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+.Post .Post-header .Post-header-another-fun{
+    position: absolute;
+    width: 50%;
+    max-width: 250px;
+    background-color: var(--cardColor);
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    overflow: hidden;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    border-radius: 10px;
+}
+.Post .Post-header .Post-header-another-fun .Post-header-another-fun-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+}
+.Post .Post-header .Post-header-another-fun .Post-header-another-fun-wrapper hr{
+    margin: 0;
+    border: 1px solid var(--hoverColor);
+    align-self: center;
+    width: 100%;
+}
+.Post .Post-header .Post-header-another-fun .Post-header-another-menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.Post .Post-header .Post-header-another-fun .Post-header-another-menu:hover{
+    background-color: var(--hoverColor)
+}
+.Post .Post-header .Post-header-another-fun img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    display: block;
+}
+.Post .Post-desc{
+    font-size: 15px;
+}
+.Post > img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Post .Post-react{
+    display: flex;
+    flex-direction: column;
+}
+.Post .Post-react .Post-react-img{
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.Post .Post-react .Post-react-img img{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+.Post .Post-react .Post-length-wrapper {
+    display: flex;
+}
+.Post .Post-react .Post-length {
+    font-size: 15px;
+    padding: 8px;
+}
+.Post .Post-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 170px;
+    overflow: auto;
+}
+.Post .Post-comment-chat .Post-comment-user{
+    display: flex;
+    align-items: center;   
+}
+.Post .Post-comment-chat .Post-comment-user .react-input-emoji--container{
+    background-color: var(--inputColor);
+    color: var(--black);
+    border: none;
+}
+.Post .Post-comment-chat .Post-comment-user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Post .Post-comment .Post-comment-list{
+    display: flex;
+}
+.Post .Post-comment .Post-comment-list img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Post .Post-comment .Post-comment-list .Post-comment-list-info{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    background-color: var(--bgCmtColor);
+    margin-left: 15px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+.Post .Post-comment .Post-comment-list .Post-comment-list-info span:nth-of-type(1){
+    font-weight: 600;
+    font-size: 14px;   
+}
+.Post .Post-comment .Post-comment-list .Post-comment-list-info span:nth-of-type(2){
+    font-weight: 400;
+    font-size: 15px;   
+}
+.Post .Post-comment .Post-comment-list .Post-comment-list-info a{
+    color: inherit;
+}
+.Post .Post-comment .Post-comment-list .Post-comment-list-info a:hover{
+    text-decoration: underline;
+}
+
+

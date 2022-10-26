@@ -1,0 +1,18 @@
+.PostSkeleton {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--cardColor);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.PostSkeleton .PostSkeleton-header {
+    display: flex;
+}
+
+.PostSkeleton .PostSkeleton-header .PostSkeleton-header-name {
+    flex: 0.5;
+    margin-left: 10px;
+}

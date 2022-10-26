@@ -1,0 +1,238 @@
+.PostDetail{
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+ }
+.mantine-144aj37 {
+    padding: 20px 16px;
+ }
+ .mantine-144aj37 .mantine-1aksaa9{
+    padding: 0;
+    background-color: var(--cardColor);
+ }
+ .mantine-1aksaa9 .mantine-121w2fi{
+    margin: 4px 0 0 0;
+    padding: 0 4px;
+ }
+ .PostDetail .PostDetail-leftside{
+    width: 70%;
+    background-color: var(--bgColorPost);
+    font-size: 0;
+    display: flex;
+    align-items: center;
+ }
+ .PostDetail .PostDetail-rightside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cardColor);
+    color: var(--black);
+}
+.PostDetail .PostDetail-rightside .react-input-emoji--container{
+    background-color: var(--inputColor);
+    color: var(--black);
+    border: none;
+}
+.PostDetail .PostDetail-rightside .icon{
+    width: 24px;
+    height: 24px;
+}
+.PostDetail .PostDetail-rightside a{
+    color: inherit;
+}
+.PostDetail .PostDetail-rightside a:hover{
+    text-decoration: underline;
+}
+.PostDetail .PostDetail-leftside .PostDetail-leftside-img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 88vh;
+    max-width: 100%;
+    border: 0;
+}
+.PostDetail .PostDetail-rightside .PostDetail-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+}
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-info-left{
+    display: flex;
+    gap: 1rem;
+}
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-info-right{
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    height: 36px;
+}
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-another{
+    position: absolute;
+    width: 80%;
+    max-width: 250px;
+    background-color: var(--cardColor);
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    overflow: hidden;
+    top: 95%;
+    right: 0;
+    z-index: 100;
+    border-radius: 10px;
+}
+.PostDetail-info-wrapper .PostDetail-info-right:hover, .PostDetail-info-wrapper .PostDetail-another-menu:hover{
+    background-color: var(--hoverColor)
+}
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-another .PostDetail-another-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+}
+.PostDetail-rightside hr{
+    margin: 0;
+    border: 1px solid var(--hrColor);
+    align-self: center;
+    width: 99%;
+}
+.PostDetail-another .PostDetail-another-wrapper .PostDetail-another-menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-info-left .PostDetail-info-profileImg{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.PostDetail-info-wrapper .PostDetail-info-left .PostDetail-info{
+    display: flex;
+    align-items: center;
+}
+.PostDetail-info-wrapper .PostDetail-info-left .PostDetail-info .PostDetail-info-name{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.PostDetail-rightside .PostDetail-info-wrapper .PostDetail-info-right img{
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.PostDetail-desc{
+    width: 100%;
+}
+.PostDetail-desc-wrapper{
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.PostDetail-desc-img .PostDetail-desc-img-inner{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+.PostDetail-desc-info-wrapper{
+    align-items: stretch;
+    border: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    flex-shrink: 1;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    min-width: 0;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.PostDetail-desc-username-wrapper{
+    font-weight: 600;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: stretch;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: flex-start;
+}
+.PostDetail-desc-info{
+    font-size: 14px;
+}
+.PostDetail-desc-info-inline{
+    align-items: center;
+    display: inline-flex;
+}
+.PostDetail-desc-text-wrapper{
+    display: inline;
+}
+.PostDetail-desc-time{
+    font-size: 12px;
+    color: var(--blurColor);
+    margin-top: 0.5rem;
+}
+.PostDetailComment-wrapper{
+    height: 43vh;
+    max-height: 43vh;
+    overflow: auto;
+}
+.PostDetail .PostDetail-rightside .PostDetail-react{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.PostDetail .PostDetail-rightside .PostDetail-react .PostDetail-react-img{
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.PostDetail .PostDetail-rightside .PostDetail-react .PostDetail-react-img img{
+    padding: 8px;
+}
+.PostDetail-length-wrapper{
+    display: flex;
+    font-size: 14px;
+}
+.PostDetail-length-wrapper span{
+    padding: 5px;
+}
+.PostDetail-comment-chat{
+    padding: 10px;
+}
+.PostDetail-comment-chat .PostDetail-comment-user{
+    display: flex;
+    align-items: center;   
+}
+.PostDetail-comment-chat .PostDetail-comment-user img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.input-Width{
+    width: 88%;
+}
+@media only screen and (max-width: 767px){
+    .PostDetail .PostDetail-leftside{
+        width: 50%;
+    }
+    .PostDetail .PostDetail-rightside{
+        width: 50%;
+    }
+    .PostDetail-comment-chat .PostDetail-comment-user img{
+        display: none;
+    }
+    .input-Width{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
